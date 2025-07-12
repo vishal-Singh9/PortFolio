@@ -70,6 +70,47 @@ const Contact = () => {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+          {/* Contact Information */}
+          <div className="space-y-8">
+            <div className="bg-gradient-primary p-8 rounded-2xl text-white shadow-glow">
+              <h3 className="text-3xl font-bold mb-8 text-center">
+                Let's Connect
+              </h3>
+              <div className="space-y-6">
+                {contactInfo.map((info, index) => (
+                  <a
+                    key={index}
+                    href={info.link}
+                    target={info.link.startsWith('http') ? '_blank' : undefined}
+                    rel={info.link.startsWith('http') ? 'noopener noreferrer' : undefined}
+                    className="flex items-center space-x-6 p-6 rounded-xl bg-white/10 backdrop-blur-sm hover:bg-white/20 transition-all duration-300 group border border-white/20"
+                  >
+                    <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                      <info.icon className="w-8 h-8 text-white" />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-lg text-white">{info.title}</h4>
+                      <p className="text-white/80 text-sm">{info.value}</p>
+                    </div>
+                  </a>
+                ))}
+              </div>
+              
+              <div className="mt-8 p-6 bg-white/10 backdrop-blur-sm rounded-xl border border-white/20">
+                <h4 className="text-xl font-semibold mb-4 text-white">
+                  Download Resume
+                </h4>
+                <p className="text-white/80 mb-6 text-sm">
+                  Get a comprehensive overview of my experience and skills.
+                </p>
+                <Button variant="secondary" size="lg" className="w-full bg-white text-primary hover:bg-white/90">
+                  <Download className="w-5 h-5 mr-2" />
+                  Download Resume (PDF)
+                </Button>
+              </div>
+            </div>
+          </div>
+
           {/* Contact Form */}
           <Card className="shadow-elegant">
             <CardHeader>
@@ -156,65 +197,6 @@ const Contact = () => {
               </form>
             </CardContent>
           </Card>
-
-          {/* Contact Information */}
-          <div className="space-y-8">
-            <div>
-              <h3 className="text-2xl font-semibold mb-6 text-foreground">
-                Contact Information
-              </h3>
-              <div className="space-y-4">
-                {contactInfo.map((info, index) => (
-                  <a
-                    key={index}
-                    href={info.link}
-                    target={info.link.startsWith('http') ? '_blank' : undefined}
-                    rel={info.link.startsWith('http') ? 'noopener noreferrer' : undefined}
-                    className="flex items-center space-x-4 p-4 rounded-lg hover:bg-muted/50 transition-colors duration-300 group"
-                  >
-                    <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary/20 transition-colors duration-300">
-                      <info.icon className="w-6 h-6 text-primary" />
-                    </div>
-                    <div>
-                      <h4 className="font-medium text-foreground">{info.title}</h4>
-                      <p className="text-muted-foreground">{info.value}</p>
-                    </div>
-                  </a>
-                ))}
-              </div>
-            </div>
-
-            <div className="bg-gradient-subtle p-6 rounded-lg">
-              <h3 className="text-xl font-semibold mb-4 text-foreground">
-                Download Resume
-              </h3>
-              <p className="text-muted-foreground mb-6">
-                Get a comprehensive overview of my experience, skills, and achievements in a downloadable format.
-              </p>
-              <Button variant="cta" size="lg" className="w-full sm:w-auto">
-                <Download className="w-5 h-5 mr-2" />
-                Download Resume (PDF)
-              </Button>
-            </div>
-
-            <div className="bg-gradient-subtle p-6 rounded-lg">
-              <h3 className="text-xl font-semibold mb-4 text-foreground">
-                Let's Collaborate
-              </h3>
-              <p className="text-muted-foreground mb-4">
-                I'm always interested in new opportunities and exciting projects. Whether you're looking for:
-              </p>
-              <ul className="text-muted-foreground space-y-2">
-                <li>• Full-time opportunities</li>
-                <li>• Freelance projects</li>
-                <li>• Consulting work</li>
-                <li>• Technical mentoring</li>
-              </ul>
-              <p className="text-muted-foreground mt-4">
-                Feel free to reach out and let's discuss how we can work together!
-              </p>
-            </div>
-          </div>
         </div>
       </div>
     </section>
