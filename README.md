@@ -1,73 +1,139 @@
-# Welcome to your Lovable project
+# Vishal Portfolio
 
-## Project info
+A modern, responsive portfolio website built with React, TypeScript, and Tailwind CSS, showcasing the work and skills of Vishal Singh, a passionate Full Stack Developer.
 
-**URL**: https://lovable.dev/projects/43069612-8acf-42da-b3f7-e0fc8cbdd137
+## 🚀 Features
 
-## How can I edit this code?
+- **Modern Design**: Clean, professional aesthetic with smooth animations
+- **Fully Responsive**: Optimized for all devices and screen sizes
+- **Performance Optimized**: Fast loading with modern web technologies
+- **Interactive UI**: Smooth scrolling navigation and engaging user experience
+- **Contact Form**: Functional contact form with validation
+- **Project Showcase**: Detailed project presentations with live demos
+- **Skills Display**: Comprehensive skills and technologies overview
 
-There are several ways of editing your application.
+## 🛠️ Technologies Used
 
-**Use Lovable**
+- **Frontend**: React 18, TypeScript, Tailwind CSS
+- **UI Components**: shadcn/ui with Radix UI primitives
+- **Icons**: Lucide React
+- **Build Tool**: Vite
+- **Styling**: Tailwind CSS with custom design system
+- **Form Handling**: React Hook Form with Zod validation
+- **Animations**: Custom CSS animations and transitions
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/43069612-8acf-42da-b3f7-e0fc8cbdd137) and start prompting.
+## 📁 Project Structure
 
-Changes made via Lovable will be committed automatically to this repo.
+```
+vishal-portfolio/
+├── public/
+│   ├── favicon.svg          # Custom VS logo
+│   └── assets/              # Static assets
+├── src/
+│   ├── components/          # React components
+│   │   ├── Navigation.tsx   # Main navigation
+│   │   ├── Hero.tsx         # Hero section
+│   │   ├── About.tsx        # About section
+│   │   ├── Skills.tsx       # Skills showcase
+│   │   ├── Projects.tsx     # Project portfolio
+│   │   ├── Contact.tsx      # Contact form
+│   │   ├── Footer.tsx       # Footer component
+│   │   └── ui/              # Reusable UI components
+│   ├── pages/               # Page components
+│   ├── hooks/               # Custom React hooks
+│   ├── lib/                 # Utility functions
+│   └── assets/              # Images and media
+├── package.json
+└── README.md
+```
 
-**Use your preferred IDE**
+## 🚀 Getting Started
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Prerequisites
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- Node.js (v18 or higher)
+- npm or yarn
 
-Follow these steps:
+### Installation
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+1. Clone the repository:
+```bash
+git clone https://github.com/vishalsingh/vishal-portfolio.git
+cd vishal-portfolio
+```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+2. Install dependencies:
+```bash
+npm install
+```
 
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+3. Start the development server:
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+4. Open your browser and navigate to `http://localhost:8080`
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Build for Production
 
-**Use GitHub Codespaces**
+```bash
+npm run build
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+The built files will be in the `dist` directory.
 
-## What technologies are used for this project?
+## 🎨 Customization
 
-This project is built with:
+### Colors and Theming
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+The project uses a custom design system defined in `src/index.css`. You can modify the CSS variables to change the color scheme:
 
-## How can I deploy this project?
+```css
+:root {
+  --primary: 262 83% 58%;
+  --primary-foreground: 210 40% 98%;
+  --primary-glow: 262 100% 75%;
+  /* ... other variables */
+}
+```
 
-Simply open [Lovable](https://lovable.dev/projects/43069612-8acf-42da-b3f7-e0fc8cbdd137) and click on Share -> Publish.
+### Components
 
-## Can I connect a custom domain to my Lovable project?
+All components are built with TypeScript and follow consistent patterns:
+- Responsive design by default
+- Accessible markup
+- Consistent styling with Tailwind CSS
+- Smooth animations and transitions
 
-Yes, you can!
+## 📸 Screenshots
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+The portfolio includes:
+- **Hero Section**: Eye-catching introduction with call-to-action buttons
+- **About Section**: Personal story and professional highlights
+- **Skills Section**: Technical skills organized by categories
+- **Projects Section**: Featured projects with detailed descriptions
+- **Contact Section**: Professional contact form and information
+- **Footer**: Additional navigation and social links
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## 🔧 Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
+
+## 📄 License
+
+This project is open source and available under the MIT License.
+
+## 👨‍💻 About Vishal Singh
+
+Full Stack Developer with 5+ years of experience building modern web applications. Passionate about creating beautiful, functional, and scalable digital experiences using cutting-edge technologies.
+
+**Contact**: vishal.singh@example.com  
+**GitHub**: [@vishalsingh](https://github.com/vishalsingh)  
+**LinkedIn**: [linkedin.com/in/vishalsingh](https://linkedin.com/in/vishalsingh)
+
+---
+
+Built with ❤️ and lots of coffee by Vishal Singh
