@@ -268,6 +268,7 @@ const Projects = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
+                    
                     <Github className="w-5 h-5 mr-2" />
                     View All Projects
                   </a>
