@@ -6,7 +6,7 @@ import ecommerceImg from "@/assets/project-ecommerce.jpg";
 import windCarImg from "@/assets/project-WindCar.webp";
 import mannImg from "@/assets/project-Mann.webp";
 import manAndVanImg from "@/assets/project-MAV.webp";
-import maidImg from "@/assets/project-Maid.webp";
+import maidImg from "@/assets/project-maid.webp";
 
 const Projects = () => {
   const projects = [
