@@ -1,5 +1,6 @@
 import { Github, Linkedin, Mail, Heart, ArrowUp } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import Resume from "@/assets/VishalSingh_Resume.pdf";
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -22,17 +23,17 @@ const Footer = () => {
   const socialLinks = [
     {
       icon: Github,
-      href: "https://github.com/vishalsingh",
+      href: "https://github.com/vishal-Singh9/",
       label: "GitHub"
     },
     {
       icon: Linkedin,
-      href: "https://linkedin.com/in/vishalsingh",
+      href: "https://www.linkedin.com/in/vishal-singh-1b6914223/",
       label: "LinkedIn"
     },
     {
       icon: Mail,
-      href: "mailto:vishal.singh@example.com",
+      href: "mailto:vishal.sng9@gmail.com",
       label: "Email"
     }
   ];
@@ -55,10 +56,10 @@ const Footer = () => {
               <span className="text-xl font-bold text-foreground">Vishal Singh</span>
             </div>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              Full Stack Developer passionate about creating beautiful, functional, and scalable web experiences.
+              Crafting seamless digital experiences with React—turning ideas into interactive, high-performance web applications.
             </p>
             <div className="flex space-x-4">
-              {socialLinks.map((social, index) => (
+              {socialLinks?.map((social, index) => (
                 <a
                   key={index}
                   href={social.href}
@@ -97,24 +98,24 @@ const Footer = () => {
               <div>
                 <p className="text-sm text-muted-foreground">Email</p>
                 <a
-                  href="mailto:vishal.singh@example.com"
+                  href="mailto:vishal.sng9@gmail.com"
                   className="text-primary hover:text-primary-glow transition-colors duration-300"
                 >
-                  vishal.singh@example.com
+                  vishal.sng9@gmail.com
                 </a>
               </div>
               <div>
                 <p className="text-sm text-muted-foreground">Phone</p>
                 <a
-                  href="tel:+15551234567"
+                  href="tel:+919956414364"
                   className="text-primary hover:text-primary-glow transition-colors duration-300"
                 >
-                  +1 (555) 123-4567
+                  +91 9956414364
                 </a>
               </div>
               <div>
                 <p className="text-sm text-muted-foreground">Location</p>
-                <span className="text-foreground">San Francisco, CA</span>
+                <span className="text-foreground">Varanasi, Uttar Pradesh, India</span>
               </div>
             </div>
           </div>
@@ -143,8 +144,9 @@ const Footer = () => {
                 variant="outline"
                 size="sm"
                 className="w-full justify-start"
+                onClick={() => window.open(Resume, '_blank')}
               >
-                Download Resume
+               Resume
               </Button>
             </div>
           </div>
@@ -153,19 +155,19 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="py-6 border-t border-border flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <div className="flex items-center space-x-2 text-muted-foreground">
-            <span>© {currentYear} Vishal Singh. Made with</span>
-            <Heart className="w-4 h-4 text-red-500" />
-            <span>and lots of coffee.</span>
+            <span>© {currentYear} Vishal Singh</span>
           </div>
-          
-          <div className="flex items-center space-x-6 text-sm text-muted-foreground">
-            <span>Built with React & TypeScript</span>
+          <div className="flex items-center space-x-6 text-sm mb-0 sm:mb-0 pb-4 sm:pb-0">
             <button
               onClick={scrollToTop}
-              className="flex items-center space-x-1 hover:text-primary transition-colors duration-300"
+              className="group flex items-center gap-2 px-5 py-2 rounded-full bg-gradient-to-r from-primary/20 to-primary/10 hover:from-primary/30 hover:to-primary/20 transition-all duration-300 shadow-lg border border-primary/30 hover:border-primary text-primary font-semibold focus:outline-none focus:ring-2 focus:ring-primary/40 relative overflow-hidden"
+              aria-label="Back to Top"
             >
-              <ArrowUp className="w-4 h-4" />
-              <span>Back to Top</span>
+              <span className="absolute left-0 top-0 w-full h-full bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-md"></span>
+              <ArrowUp className="w-5 h-5 mr-1 group-hover:animate-bounce text-primary drop-shadow" />
+              <span className="hidden sm:inline-block group-hover:underline tracking-wide font-medium">
+                Back to Top
+              </span>
             </button>
           </div>
         </div>

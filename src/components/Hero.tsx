@@ -1,5 +1,5 @@
 import {
-  ArrowDown,
+  
   Github,
   Linkedin,
   Mail,
@@ -7,8 +7,9 @@ import {
   ExternalLink,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import heroBg from "@/assets/hero-bg.jpg";
 import back from "@/assets/Back.webp";
+import Resume from "@/assets/VishalSingh_Resume.pdf";
+
 const Hero = () => {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -39,8 +40,7 @@ const Hero = () => {
               </span>
             </h1>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl mb-8 sm:mb-10 lg:mb-12 text-gray-200 max-w-xs sm:max-w-2xl md:max-w-3xl lg:max-w-4xl xl:max-w-5xl mx-auto leading-relaxed font-light px-2 sm:px-4 hero-subtitle">
-              Full Stack Developer passionate about creating beautiful,
-              functional, and scalable web experiences that make a difference.
+              React Developer dedicated to building seamless, high-performance user interfaces and modern web applications that delight users and drive results.
             </p>
           </div>
 
@@ -64,19 +64,20 @@ const Hero = () => {
               Get In Touch
             </Button>
             <Button
+              onClick={() => window.open(Resume, '_blank')}
               variant="secondary"
               size="lg"
               className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-white/10 backdrop-blur-sm border-2 border-white/20 text-white hover:bg-white/20 font-semibold text-sm sm:text-base lg:text-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 btn-hover-lift focus-ring"
             >
               <Download className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
-              Download Resume
+               Resume
             </Button>
           </div>
 
           {/* Social Links */}
           <div className="flex justify-center space-x-4 sm:space-x-6 lg:space-x-8 mb-4 sm:mb-8 lg:mb-8">
             <a
-              href="https://github.com/vishalsingh"
+              href="https://github.com/vishal-Singh9/"
               target="_blank"
               rel="noopener noreferrer"
               className="group"
@@ -87,7 +88,7 @@ const Hero = () => {
               </div>
             </a>
             <a
-              href="https://linkedin.com/in/vishalsingh"
+              href="https://www.linkedin.com/in/vishal-singh-1b6914223/"
               target="_blank"
               rel="noopener noreferrer"
               className="group"
@@ -98,7 +99,7 @@ const Hero = () => {
               </div>
             </a>
             <a 
-              href="mailto:vishal.singh@example.com" 
+              href="mailto:vishal.sng9@gmail.com" 
               className="group"
               aria-label="Email Contact"
             >
@@ -111,8 +112,7 @@ const Hero = () => {
           {/* Professional Tagline */}
           <div className=" sm:block mb-6 sm:mb-4 lg:mb-8">
             <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-300 max-w-sm sm:max-w-lg md:max-w-2xl lg:max-w-3xl mx-auto leading-relaxed px-4 sm:px-6">
-              Specializing in React, Node.js, and modern web technologies to
-              build exceptional digital experiences.
+              Passionate about crafting high-performance web apps with React and the latest in frontend technology.
             </p>
           </div>
         </div>

@@ -4,8 +4,9 @@ import { Card, CardContent } from "@/components/ui/card";
 const About = () => {
   const highlights = [
     {
+      
       icon: Code,
-      title: "1+ Years Experience",
+      title: "1.5+ Years Experience",
       description: "Building web applications with modern technologies and best practices"
     },
     {
@@ -36,9 +37,9 @@ const About = () => {
   ];
 
   const stats = [
-    { number: "50+", label: "Projects Completed" },
-    { number: "5+", label: "Years Experience" },
-    { number: "20+", label: "Technologies Mastered" },
+    { number: "10+", label: "Projects Completed" },
+    { number: "1.5+", label: "Years Experience" },
+    { number: "15+", label: "Technologies Mastered" },
     { number: "100%", label: "Client Satisfaction" }
   ];
 
@@ -51,13 +52,13 @@ const About = () => {
             About Me
           </h2>
           <p className="text-xl md:text-2xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-            Passionate full-stack developer with a love for creating innovative and scalable web solutions
+              Dedicated React developer focused on building seamless, high-performance web applications that deliver real value and exceptional user experiences.
           </p>
         </div>
 
         {/* Stats Section */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
-          {stats.map((stat, index) => (
+          {stats?.map((stat, index) => (
             <Card key={index} className="text-center shadow-elegant hover:shadow-glow transition-all duration-300 border-2 hover:border-primary/20">
               <CardContent className="p-6">
                 <div className="text-3xl md:text-4xl font-bold text-primary mb-2">{stat.number}</div>
@@ -76,7 +77,7 @@ const About = () => {
                 Building Digital Experiences That Matter
               </h3>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                I'm a dedicated full-stack developer with over 5 years of experience creating 
+                I'm a dedicated React developer with over 1.5+ years of experience creating 
                 web applications that combine beautiful design with robust functionality. My 
                 journey in tech started with a curiosity about how websites work, and it has 
                 evolved into a passion for building digital experiences that make a real difference.
@@ -97,7 +98,7 @@ const About = () => {
 
             {/* Skills Tags */}
             <div className="flex flex-wrap gap-3">
-              {["React Enthusiast", "Node.js Expert", "UI/UX Advocate", "Open Source Contributor", "Tech Mentor"].map((tag, index) => (
+              {["React Enthusiast", "UI/UX Advocate", "Open Source Contributor", "Tech Mentor", "Web Developer", "Frontend Developer"].map((tag, index) => (
                 <span key={index} className="px-4 py-2 bg-primary/10 text-primary rounded-full font-medium text-sm md:text-base hover:bg-primary/20 transition-colors duration-300">
                   {tag}
                 </span>
@@ -107,7 +108,7 @@ const About = () => {
 
           {/* Highlights Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            {highlights.map((highlight, index) => (
+            {highlights?.map((highlight, index) => (
               <Card 
                 key={index} 
                 className="shadow-elegant hover:shadow-glow transition-all duration-300 border-2 hover:border-primary/20 group"

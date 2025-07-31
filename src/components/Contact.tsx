@@ -5,6 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
+import Resume from "@/assets/VishalSingh_Resume.pdf";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -40,29 +41,29 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email",
-      value: "vishal.singh@example.com",
-      link: "mailto:vishal.singh@example.com",
+      value: "vishal.sng9@gmail.com",
+      link: "mailto:vishal.sng9@gmail.com",
       description: "Drop me a line anytime"
     },
     {
       icon: Phone,
       title: "Phone",
-      value: "+1 (555) 123-4567",
-      link: "tel:+15551234567",
+      value: "+91 9956414364",
+      link: "tel:+919956414364",
       description: "Call me for quick chats"
     },
     {
       icon: MapPin,
       title: "Location",
-      value: "San Francisco, CA",
-      link: "https://maps.google.com/?q=San+Francisco,+CA",
+      value: "Varanasi, Uttar Pradesh, India",
+      link: "https://maps.google.com/?q=Varanasi,+Uttar+Pradesh,+India",
       description: "Where I'm based"
     }
   ];
 
   const quickStats = [
     { icon: MessageSquare, label: "Response Time", value: "< 24 hours" },
-    { icon: Clock, label: "Availability", value: "Mon - Fri, 9 AM - 6 PM PST" },
+    { icon: Clock, label: "Availability", value: "24/7 hours" },
     { icon: Globe, label: "Remote Work", value: "Available worldwide" }
   ];
 
@@ -138,7 +139,7 @@ const Contact = () => {
                   <p className="text-muted-foreground">
                     Get a comprehensive overview of my experience, skills, and achievements.
                   </p>
-                  <Button variant="outline" size="lg" className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+                  <Button onClick={() => window.open(Resume, '_blank')} variant="outline" size="lg" className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground">
                     <Download className="w-4 h-4 mr-2" />
                     Download Resume (PDF)
                   </Button>
